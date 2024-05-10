@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.nav-wrap {
+  width: 100%;
+  height: 50px;
+  box-shadow: 1px 1px 5px 1px #ccc;
+}
+
+.nav-wrap a {
+  display: inline-block;
+  width: 150px;
+  line-height: 50px;
+  text-align: center;
+  box-shadow: 1px 1px 5px 1px #ccc;
+}
+
+a {
+  display: inline-block;
+  width: 150px;
+  line-height: 50px;
+  text-align: center;
+  box-shadow: 1px 1px 5px 1px #ccc;
+}

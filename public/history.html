@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a onclick="push('/a')">toA</a>
+    <a onclick="push('/b')">toB</a>
+
+    <script>
+        //   浏览器自带api切换路径,会产生虚拟路径，不带#,但是敲回车会404
+        function push (path) {
+            history.pushState({ p: path }, null, path)
+        }
+        window.addEventListener('popstate', e => {
+            console.log(history.length);  //有多少个历史路径
+            console.log(e);  //不能监听brower路由变化，只能监听前进后退
+        })
+    </script>
+</body>
+
+</html>
